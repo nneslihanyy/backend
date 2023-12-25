@@ -2,7 +2,9 @@
 //dosyayı uygulamaya tanıtma işlemini app jsde yapıyoruz
 //bu kütüphaneyi mongoose değişkeniyle kullanabiliyorum
 var mongoose = require("mongoose");
-var dbURI = "mongodb://localhost/mekanbul";
+var dbURI =
+  "mongodb+srv://neslihanyagmurca:v24TD3IGAueC2iq4@mekanbul.ebuno9s.mongodb.net/mekanbul";
+//var dbURI = "mongodb://localhost/mekanbul";
 mongoose.connect(dbURI);
 //bağlandıysa ekrana basılacak ifade
 mongoose.connection.on("connected", function () {
